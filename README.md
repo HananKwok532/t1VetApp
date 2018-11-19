@@ -8,6 +8,6 @@ are this README file & the folders labeled Images, DB Files, and Project Plannin
 Android Studio project.
 
 Tools Used:
-Android Studio
-MySQL Server & Workbench (and the JDBC Connector for MySQL)
+Android Studio,
+MySQL Server & Workbench (and the JDBC Connector for MySQL), and
 Github for version control
