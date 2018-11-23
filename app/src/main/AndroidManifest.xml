@@ -20,7 +20,8 @@
         <activity android:name=".RegisterActivity" />
         <activity android:name=".HomePageActivity" />
         <activity android:name=".PetProfilesActivity" />
-        <activity android:name=".IndividualProfileActivity"></activity>
+        <activity android:name=".IndividualProfileActivity" />
+        <activity android:name=".AppointmentsActivity"></activity>
     </application>
 
 </manifest>
