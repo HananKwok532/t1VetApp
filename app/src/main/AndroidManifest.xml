@@ -21,7 +21,8 @@
         <activity android:name=".HomePageActivity" />
         <activity android:name=".PetProfilesActivity" />
         <activity android:name=".IndividualProfileActivity" />
-        <activity android:name=".AppointmentsActivity"></activity>
+        <activity android:name=".AppointmentsActivity" />
+        <activity android:name=".ExistingAppointmentsActivity"></activity>
     </application>
 
 </manifest>
