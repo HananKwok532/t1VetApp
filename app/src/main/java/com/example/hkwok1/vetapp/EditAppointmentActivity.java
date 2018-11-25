@@ -87,3 +87,7 @@ public class EditAppointmentActivity extends AppCompatActivity {
         }
     }
 }
+
+/* The database query statement needs a way to get the name of the pet that was chosen when the user chose an appointment to edit
+ * on the Existing Appointments page. This will help to match the appointment that's being edited to its entry in the
+ * database. */
