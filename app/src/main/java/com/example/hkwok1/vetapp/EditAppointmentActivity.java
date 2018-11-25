@@ -24,6 +24,7 @@ public class EditAppointmentActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_appointment);
+        setTitle("Edit an Appointment");
 
         Spinner appointmentType = findViewById(R.id.appointmentType);
         appointmentType.setOnItemClickListener(new AdapterView.OnItemClickListener() {
