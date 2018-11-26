@@ -15,13 +15,13 @@ public class AskMessage extends AppCompatActivity {
         ImageButton back = (ImageButton)findViewById(R.id.backLButton);
         back.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                startActivity(new Intent(AskMessage.this, Messages.class));
+                startActivity(new Intent(AskMessage.this, MessagesActivity.class));
             }
         });
         ImageButton submit = (ImageButton)findViewById(R.id.submitLButton);
         submit.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                startActivity(new Intent(AskMessage.this, Messages.class));
+                startActivity(new Intent(AskMessage.this, MessagesActivity.class));
             }
         });
     }
