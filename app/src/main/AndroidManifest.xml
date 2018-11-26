@@ -26,7 +26,8 @@
         <activity android:name=".MessagesActivity" />
         <activity android:name=".LogMessage" />
         <activity android:name=".AskMessage" />
-        <activity android:name=".NewAppointmentActivity"></activity>
+        <activity android:name=".NewAppointmentActivity" />
+        <activity android:name=".RemindersActivity"></activity>
     </application>
 
 </manifest>
