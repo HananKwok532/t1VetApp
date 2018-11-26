@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class MessagesActivity extends AppCompatActivity {
 
@@ -21,6 +22,12 @@ public class MessagesActivity extends AppCompatActivity {
         ask.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 startActivity(new Intent(MessagesActivity.this, AskMessage.class));
+            }
+        });
+        ImageButton home = (ImageButton)findViewById(R.id.homeButton);
+        home.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                startActivity(new Intent(MessagesActivity.this, HomePageActivity.class));
             }
         });
     }
