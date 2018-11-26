@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".LogMessage">
+
+    <ImageView
+        android:id="@+id/backLButton"
+        android:layout_width="130dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="9dp"
+        android:background="@drawable/paw"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toStartOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+    <ImageView
+        android:id="@+id/submitLButton"
+        android:layout_width="130dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/paw"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/message3"
+        app:layout_constraintTop_toTopOf="@+id/message3" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:text="Back"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/backLButton"
+        app:layout_constraintStart_toStartOf="@+id/backLButton" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="14dp"
+        android:text="Submit"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/submitLButton"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="2dp"
+        android:text="Message Log"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/backLButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="16dp"
+        android:text="Inbox"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/message1"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="171dp"
+        android:background="@android:color/darker_gray"
+        android:text="Message 1"
+        app:layout_constraintEnd_toEndOf="@+id/message3"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/message2"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="89dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="93dp"
+        android:background="@android:color/darker_gray"
+        android:text="Message 2"
+        app:layout_constraintBottom_toBottomOf="@+id/message3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/message1" />
+
+    <TextView
+        android:id="@+id/message3"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginBottom="98dp"
+        android:background="@android:color/darker_gray"
+        android:text="Message 3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>
