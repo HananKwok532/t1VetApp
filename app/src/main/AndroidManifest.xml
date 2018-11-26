@@ -22,7 +22,10 @@
         <activity android:name=".PetProfilesActivity" />
         <activity android:name=".IndividualProfileActivity" />
         <activity android:name=".AppointmentsActivity" />
-        <activity android:name=".ExistingAppointmentsActivity"></activity>
+        <activity android:name=".ExistingAppointmentsActivity" />
+        <activity android:name=".MessagesActivity" />
+        <activity android:name=".LogMessage" />
+        <activity android:name=".AskMessage"></activity>
     </application>
 
 </manifest>
