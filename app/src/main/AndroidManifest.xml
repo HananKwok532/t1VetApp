@@ -25,7 +25,8 @@
         <activity android:name=".ExistingAppointmentsActivity" />
         <activity android:name=".MessagesActivity" />
         <activity android:name=".LogMessage" />
-        <activity android:name=".AskMessage"></activity>
+        <activity android:name=".AskMessage" />
+        <activity android:name=".NewAppointmentActivity"></activity>
     </application>
 
 </manifest>
