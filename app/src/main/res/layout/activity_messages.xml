@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-    tools:context=".Messages"
+    tools:context=".MessagesActivity"
     tools:layout_editor_absoluteY="81dp">
 
     <ImageButton
@@ -85,6 +85,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logButton" />
-
 
 </android.support.constraint.ConstraintLayout>
