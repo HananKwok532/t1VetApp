@@ -3,7 +3,7 @@ Components of CSC4360 Project(use Android Studio, Github, MySQL):
 Login/Sign-up page - Shyam
 Appointments page - Priyanka
 Reminders page - Laura
-Home page, Pet Profiles page - Farnoosh
+Home page - Farnoosh
 Messages page - Sarina
 Medical History page - Wendell
 Edit Existing Appointment Page, Database - Hanan
