@@ -16,7 +16,7 @@ import java.sql.Statement;
 import java.util.Date;
 
 public class EditAppointmentActivity extends AppCompatActivity {
-    private static final String url = "jdbc:mysql://localhost:3306/t1vetApp";
+    private static final String url = "jdbc:mysql://localhost:3306/t1vetapp";
     private static final String username = "root";
     private static final String password = "LegoMagazine532";
     private static String selectedType, selectedDate, selectedTime;
@@ -25,7 +25,6 @@ public class EditAppointmentActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_appointment);
-        setTitle("Edit an Appointment");
 
         Spinner appointmentType = findViewById(R.id.appointmentType);
         appointmentType.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -72,10 +71,9 @@ public class EditAppointmentActivity extends AppCompatActivity {
                 result = "DB Connection Succeeded\n";
                 Class.forName("com.mysql.jdbc.Driver");
                 Connection c = DriverManager.getConnection(url, username, password);
-                String queryString = "UPDATE t1vetapp.appointments SET appointment_type = " + selectedType + ", date = " + selectedDate + ", time = " + selectedTime + "WHERE appointments.appointments_id = 1 AND appointments.pet_name = 'Polly'";
+                String queryString = "UPDATE t1vetapp.appointments SET appointment_type = " + selectedType + ", date = " + selectedDate + ", time = " + selectedTime + "WHERE appointments.appointment_id = 1 AND appointments.pet_name = 'Polly'";
                 Statement st = c.createStatement();
                 st.executeQuery(queryString);
-                st.close();
                 c.close();
             } catch (Exception e) {
                 e.printStackTrace();
