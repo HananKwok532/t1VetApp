@@ -25,7 +25,7 @@ import android.widget.LinearLayout;
 
 public class RemindersActivity extends AppCompatActivity {
 
-    /*Date currentTime = Calendar.getInstance().getTime();
+    Date currentTime = Calendar.getInstance().getTime();
     Date eventTime = Calendar.getInstance().getTime();
     Button addButton = (Button)(findViewById(R.id.saveDate));
     DatabaseTable db = new DatabaseTable(this);
@@ -55,7 +55,7 @@ public class RemindersActivity extends AppCompatActivity {
         /* reminders will automatically go off
         * if currentDate has an appointment scheduled
         create an event to save in database */
-        /*Intent intent = new Intent(Intent.ACTION_INSERT);
+        Intent intent = new Intent(Intent.ACTION_INSERT);
         handleIntent(intent);  // intent to return all appointments from database
         intent.setType("vnd.android.cursor.item/event");
         intent.putExtra(CalendarContract.Events.TITLE, "Appointment Reminder");
@@ -76,7 +76,7 @@ public class RemindersActivity extends AppCompatActivity {
         * display alertDialog
         * text 'You have an appointment today' */
 
-        /*AlertDialog.Builder alert = new AlertDialog.Builder(this);
+        AlertDialog.Builder alert = new AlertDialog.Builder(this);
         alert.setTitle("Appointment Reminder");
         alert.setMessage("You have an appointment today");
         alert.setNegativeButton("Close", new DialogInterface.OnClickListener() {
@@ -90,5 +90,5 @@ public class RemindersActivity extends AppCompatActivity {
             newAlert.show();
 
         }
-    }*/
+    }
 }
