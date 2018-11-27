@@ -19,8 +19,6 @@
         <activity android:name=".EditAppointmentActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".HomePageActivity" />
-        <activity android:name=".PetProfilesActivity" />
-        <activity android:name=".IndividualProfileActivity" />
         <activity android:name=".AppointmentsActivity" />
         <activity android:name=".ExistingAppointmentsActivity" />
         <activity android:name=".MessagesActivity" />
