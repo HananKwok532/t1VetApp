@@ -20,6 +20,7 @@ public class EditAppointmentActivity extends AppCompatActivity {
     private static final String username = "root";
     private static final String password = "LegoMagazine532";
     private static String selectedType, selectedDate, selectedTime;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -71,7 +72,7 @@ public class EditAppointmentActivity extends AppCompatActivity {
                 result = "DB Connection Succeeded\n";
                 Class.forName("com.mysql.jdbc.Driver");
                 Connection c = DriverManager.getConnection(url, username, password);
-                String queryString = "update t1vetApp.appointments set appointment_type = " + selectedType + ", date = " + selectedDate + ", time = " + selectedTime + "where appointments.pet_id = pets.pet_id";
+                String queryString = "UPDATE t1vetapp.appointments SET appointment_type = " + selectedType + ", date = " + selectedDate + ", time = " + selectedTime + "WHERE appointments.appointments_id = 1 AND appointments.pet_name = 'Polly'";
                 Statement st = c.createStatement();
                 st.executeQuery(queryString);
                 st.close();
