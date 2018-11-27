@@ -25,7 +25,8 @@
         <activity android:name=".LogMessage" />
         <activity android:name=".AskMessage" />
         <activity android:name=".NewAppointmentActivity" />
-        <activity android:name=".RemindersActivity"></activity>
+        <activity android:name=".RemindersActivity" />
+        <activity android:name=".PetProfilesActivity"></activity>
     </application>
 
 </manifest>
