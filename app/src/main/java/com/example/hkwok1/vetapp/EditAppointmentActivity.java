@@ -17,9 +17,9 @@ import java.sql.Statement;
 import java.util.Date;
 
 public class EditAppointmentActivity extends AppCompatActivity {
-    private static final String url = "jdbc:mysql://192.168.1.67:3306/t1vetapp";
+    private static final String url = "jdbc:mysql://10.250.73.231:3306/t1vetapp";
     private static final String username = "root";
-    private static final String password = "LegoMagazine532";
+    private static final String password = "test5";
     private static String selectedType, selectedDate, selectedTime;
 
     @Override
