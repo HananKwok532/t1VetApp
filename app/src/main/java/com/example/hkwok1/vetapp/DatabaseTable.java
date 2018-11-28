@@ -41,14 +41,14 @@ public class DatabaseTable {
         public final Context mHelperContext;
         public SQLiteDatabase mDatabase;
 
-        public static final String FTS_TABLE_CREATE =
+        public static final String FTS_TABLE_CREATE = "";/*
                 "CREATE VIRTUAL TABLE " + FTS_VIRTUAL_TABLE + " USING fts3 (" +
                         COL_ID + ", " +
                         COL_TYPE + ", " +
                         COL_petID + ", " +
                         COL_date + ", " +
                         COL_time + ", " +
-                        COL_petName + ")";
+                        COL_petName + ")";*/
 
         DatabaseOpenHelper(Context context) {
             super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -85,8 +85,8 @@ public class DatabaseTable {
 
         public void loadvalues() throws IOException {
 
-            final Resources resources = mHelperContext.getResources();
-            InputStream inputStream = resources.openRawResource(R.raw.vet_app.mwb);
+            /*final Resources resources = mHelperContext.getResources();*/
+            InputStream inputStream = null; /* resources.openRawResource(R.raw.vet_app.mwb);*/
             BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
 
             try {
