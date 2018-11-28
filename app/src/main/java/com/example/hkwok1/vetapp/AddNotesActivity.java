@@ -19,6 +19,7 @@ public class AddNotesActivity extends AppCompatActivity {
                 startActivity(new Intent(AddNotesActivity.this, HomePageActivity.class));
             }
         });
+
         ImageButton submit = findViewById(R.id.submitLButton);
         submit.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){

@@ -19,7 +19,8 @@ public class RegisterActivity extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openLogin();
+                //openLogin();
+                startActivity(new Intent(RegisterActivity.this, MainActivity.class));
             }
         });
 
@@ -27,7 +28,8 @@ public class RegisterActivity extends AppCompatActivity {
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                onSignUpClick(v);
+                //onSignUpClick(v);
+                startActivity(new Intent(RegisterActivity.this, MainActivity.class));
             }
         });
     }

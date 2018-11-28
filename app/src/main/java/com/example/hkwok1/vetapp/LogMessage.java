@@ -29,13 +29,13 @@ public class LogMessage extends AppCompatActivity {
         /*message1 = (TextView)findViewById(R.id.message1);
         message2 = (TextView)findViewById(R.id.message2);
         message3 = (TextView)findViewById(R.id.message3);*/
-        ImageButton backL = (ImageButton)findViewById(R.id.backLButton);
+        ImageButton backL = findViewById(R.id.backLButton);
         backL.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 startActivity(new Intent(LogMessage.this, MessagesActivity.class));
             }
         });
-        ImageButton submitL = (ImageButton)findViewById(R.id.submitLButton);
+        ImageButton submitL = findViewById(R.id.submitLButton);
         submitL.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 startActivity(new Intent(LogMessage.this, MessagesActivity.class));

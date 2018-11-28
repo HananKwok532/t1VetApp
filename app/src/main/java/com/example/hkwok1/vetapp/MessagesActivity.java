@@ -12,19 +12,22 @@ public class MessagesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_messages);
-        Button log = (Button)findViewById(R.id.logButton);
+
+        Button log = findViewById(R.id.logButton);
         log.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 startActivity(new Intent(MessagesActivity.this, LogMessage.class));
             }
         });
-        Button ask = (Button)findViewById(R.id.askButton);
+
+        Button ask = findViewById(R.id.askButton);
         ask.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 startActivity(new Intent(MessagesActivity.this, AskMessage.class));
             }
         });
-        ImageButton home = (ImageButton)findViewById(R.id.homeButton);
+
+        ImageButton home = findViewById(R.id.homeButton);
         home.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 startActivity(new Intent(MessagesActivity.this, HomePageActivity.class));

@@ -28,12 +28,14 @@ public class NewAppointmentActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_appointment);
+
         ImageButton home = findViewById(R.id.homeButton);
         home.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(NewAppointmentActivity.this, HomePageActivity.class));
             }
         });
+
         Button back = findViewById(R.id.backButton);
         back.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
