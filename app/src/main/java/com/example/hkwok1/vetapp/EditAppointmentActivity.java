@@ -1,5 +1,6 @@
 package com.example.hkwok1.vetapp;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -16,7 +17,7 @@ import java.sql.Statement;
 import java.util.Date;
 
 public class EditAppointmentActivity extends AppCompatActivity {
-    private static final String url = "jdbc:mysql://localhost:3306/t1vetapp";
+    private static final String url = "jdbc:mysql://192.168.1.67:3306/t1vetapp";
     private static final String username = "root";
     private static final String password = "LegoMagazine532";
     private static String selectedType, selectedDate, selectedTime;
@@ -50,7 +51,7 @@ public class EditAppointmentActivity extends AppCompatActivity {
         notesButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                startActivity(new Intent(EditAppointmentActivity.this, AddNotesActivity.class));
             }
         });
 
@@ -58,12 +59,29 @@ public class EditAppointmentActivity extends AppCompatActivity {
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                new setData().execute();
+                new updateData().execute();
+                startActivity(new Intent(EditAppointmentActivity.this, HomePageActivity.class));
+            }
+        });
+
+        Button homeButton = findViewById(R.id.homeButton);
+        homeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(EditAppointmentActivity.this, HomePageActivity.class));
+            }
+        });
+
+        Button backButton = findViewById(R.id.backButton);
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(EditAppointmentActivity.this, HomePageActivity.class));
             }
         });
     }
 
-    public static class setData extends AsyncTask<Void, Void, Void>{
+    public static class updateData extends AsyncTask<Void, Void, Void>{
         private String result;
         @Override
         protected Void doInBackground(Void... voids) {
