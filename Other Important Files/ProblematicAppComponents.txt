@@ -1,0 +1,5 @@
+Things that crash the app: 
+pressing the Reminders button 
+pressing the Message Log button 
+pressing the New Appointment button
+pressing the Edit button on Existing Appointments
